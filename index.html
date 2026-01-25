@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=glass_cup" />
+
+
+   
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- ------------هذا هو link مكتبة chart.js--------------- -->
+
+</head>
+<style>
+
+
+
+</style>
+
+<body>
+  <main>
+    <div class="home">
+      <div class="homewen">
+        <div class="hometext">
+          <h1>body mass index calculator</h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque quae odit quibusdam ut vitae,
+            numquam odio a dolor id dignissimos est inventore eos perferendis labore magni nihil culpa vel
+            at!</p>
+        </div>
+      </div>
+      <div class="ll">
+        <div class="datails">
+          <form action="">
+            <h2>enter you details below</h2>
+            <div class="radio">
+
+              <div class="ff">
+                <input id="male" type="radio" name="radio">
+                <label for="male">male</label>
+              </div>
+              <div class="ff">
+                <input id="female" type="radio" name="radio">
+                <label for="female">female</label>
+              </div>
+              <div class="gg">
+
+                <label for="tdee">activity</label>
+                <select name="tdee" id="tdee">
+                  <option value="moderate" id="moderate">moderate</option>
+                  <option value="little" id="little">little</option>
+                  <option value="high" id="high">high </option>
+                </select>
+              </div>
+            </div>
+
+            <div class="toimput">
+              <div class="inputend">
+                <label for="height">height</label>
+                <input id="height" type="text" placeholder="0">
+                <p>cm</p>
+              </div>
+              <div class="inputend">
+                <label for="weight">weight</label>
+                <input id="weight" type="text" placeholder="0">
+                <p>kg</p>
+              </div>
+            </div>
+            <div class="toimput">
+              <div class="inputend">
+                <label for="age">age</label>
+                <input id="age" type="text" placeholder="0">
+                <p>yrs</p>
+              </div>
+              <div class="inputend">
+                <label for="goal">your goal?</label>
+                <input id="goal" type="text" placeholder="goal">
+                <p>goal</p>
+              </div>
+            </div>
+          </form>
+          <div class="hiatotle">
+        
+            <div class="heatt">
+              <h3>welcome!</h3>
+              <p id="text">""Click here to discover your body's requirements and understand them better.→ "</p>
+            </div>
+                <div class="heatt">
+              <button id="btn">ok</button>
+            
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about">
+
+      <div class="math" id="mathdown" crossorigin="anonymous">
+        <canvas id="myChart" height="370px" width="370px" style="cursor: pointer;"></canvas>
+
+        <div class="groppr" id="groppr">
+          <h3>Resting calories are <span id="total"> 0</span></h3>
+          <p>protein : <span id="p"> 0</span> G</p>
+          <p>carb :<span id="c"> 0</span> G</p>
+          <p>fats :<span id="f"> 0</span> G</p>
+          <p><span>water :
+            <i class="fa-solid fa-bottle-water"></i></span>
+            <span id="wb"> 0</span> L
+          </p>
+          <p><span>water : <span id="icon" style="font-size: 20px; " class="material-symbols-outlined"> glass_cup</span>
+            </span> <span id="wc"> 0</span> Cup</p>
+        </div>
+     
+      </div>
+         <div class="texttahfe">
+          <h3>
+            بما أن هدفك هو الوصول إلى صحة مثالية وفهم أحتياجات جسدك، فأنت الآن تستثمر في أثمن ما تملك. الصحة هي الثروة الحقيقية والاستثمار الذي لا يخسر أبداً. كل التحية لوعيك واهتمامك.. تذكر دائماً أن جسدك يستحق الأفضل، فلا تنسَ حظه من الرياضة اليوم </h3>
+          <div class="tpbutton">
+            <button id="loop">New beginning</button>
+            <button id="download">Download.Png</button>
+          </div>
+        </div>
+
+
+    </div>
+
+
+  </main>
+
+  
+  
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>   

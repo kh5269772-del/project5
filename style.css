@@ -1,0 +1,676 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    transition: 0.6s;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 50px;
+    padding-left: 20px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.home::after {
+    content: '';
+    position: absolute;
+    border-radius: 0 0 20px 20px;
+    background: linear-gradient(to left, #0000ff5d, #2121df21);
+    width: 1200px;
+    height: 90%;
+    z-index: -1;
+    top: 0;
+    left: 2%;
+    color: #2121df21;
+}
+
+.home .homewen p {
+
+    width: 400px;
+    line-height: 26px;
+    margin-top: 10px;
+}
+
+.ll {
+
+    margin-left: 10px;
+}
+
+.homewen {
+
+    margin-left: 280px;
+}
+
+.homewen .hometext {
+    width: 600px;
+}
+
+.homewen .hometext h1 {
+    font-size: 60px;
+
+}
+
+
+.home .datails {
+    width: 600px;
+    background-color: white;
+    box-shadow: rgba(72, 120, 223, 0.08) 0px 10px 35px 50px;
+    height: 540px;
+    padding: 20px;
+    border-radius: 24px;
+    position: relative;
+}
+
+/* box-shadow: rgba(93, 72, 223, 0.08) 0px 10px 35px 50px; */
+
+.home .datails h2 {
+    text-transform: capitalize;
+    font-size: 28px;
+}
+
+.home .datails .radio {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.home .datails .radio .ff {
+    font-size: 22px;
+
+}
+
+.home .datails .radio .ff input {
+    transform: scale(1.8);
+    margin: 0 15px;
+}
+
+.home .datails .radio select {
+    width: 160px;
+    height: 30px;
+    padding: 2px 10px;
+    border-radius: 8px;
+    margin-left: 5px;
+    font-size: 18px;
+    border: 1px solid rgb(30, 74, 117);
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.home .datails .radio select option {
+    font-size: 18px;
+    margin: 20px 0;
+
+}
+
+.home .datails .toimput {
+    display: flex;
+    align-items: center;
+
+}
+
+.home .datails .toimput input {
+    width: 260px;
+    height: 60px;
+    outline: none;
+    border: 2px solid #000000b4;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 6px;
+    padding-right: 55px;
+
+}
+
+.home .datails .toimput input::placeholder {
+    color: black;
+}
+
+.home .datails .toimput label {
+    font-size: 16px;
+    padding: 10px;
+}
+
+.home .datails .toimput .inputend {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+.home .datails .toimput .inputend p {
+    position: absolute;
+    right: 11%;
+    /* background-color: white; */
+    z-index: 100;
+    background-color: transparent;
+    top: 40%;
+    font-size: 25px;
+    font-weight: 900;
+    padding: 5px;
+    color: rgb(63, 99, 242);
+
+}
+
+.home .datails .hiatotle {
+    width: 100%;
+    height: 130px;
+    margin-top: 30px;
+    padding: 20px 10px;
+    background-color: rgb(63, 99, 242);
+    color: white;
+    border-radius: 15px 80px 80px 15px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.hiatotle button {
+    padding: 5px 10px;
+    background-image: linear-gradient(to right, #a200ff, #00e1ff);
+    border-radius: 20px;
+    width: 80px;
+    height: 40px;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    cursor: pointer;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+.home .datails .hiatotle h3 {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.home .datails .hiatotle p {
+    font-size: 16px;
+}
+
+
+@media(max-width:1800px) {
+    .home::after {
+        content: '';
+        position: absolute;
+        border-radius: 0 0 20px 20px;
+        background: linear-gradient(to left, #0000ff5d, #2121df21);
+        width: 1000px;
+        height: 90%;
+        z-index: -1;
+        top: 0;
+        left: 2%;
+        color: #2121df21;
+    }
+
+    .ll {
+
+        margin-left: 0px;
+    }
+
+    .homewen {
+
+        margin-left: 100px;
+    }
+
+    .home {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        gap: 20px;
+        padding-left: 20px;
+        padding-bottom: 100px;
+        position: relative;
+    }
+
+}
+
+@media(max-width:1350px) {
+    .home::after {
+        content: '';
+        position: absolute;
+        border-radius: 0 0 20px 20px;
+        background: linear-gradient(to left, #0000ff5d, #2121df21);
+        width: 100%;
+        height: 60%;
+        z-index: -1;
+        top: 0;
+        left: 0%;
+        color: #2121df21;
+    }
+
+    .home {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        gap: 80px;
+        padding-left: 20px;
+        padding-bottom: 100px;
+        position: relative;
+    }
+
+    .homewen {
+
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    .home .homewen p {
+        width: 70%;
+        margin: auto;
+        line-height: 26px;
+        margin-top: 10px;
+    }
+
+    .homewen .hometext {
+        width: 100%;
+        margin: auto;
+    }
+
+    .home .datails {
+        width: 800px;
+        background-color: white;
+        box-shadow: rgba(72, 120, 223, 0.08) 0px 10px 35px 50px;
+        height: 570px;
+        padding: 20px;
+        border-radius: 24px;
+        margin-top: 50px;
+    }
+
+    .home .datails .toimput input {
+        width: 100%;
+    }
+
+    .home .datails .toimput {
+        gap: 20px;
+    }
+
+    .home .datails .hiatotle {
+        width: 100%;
+        height: 150px;
+        margin-top: 30px;
+        padding: 10px;
+    }
+
+    .homewen {
+        margin-left: 00px;
+    }
+
+    .home .datails .toimput .inputend p {
+        position: absolute;
+        right: 4%;
+        /* background-color: white; */
+        z-index: 100;
+        background-color: transparent;
+        top: 40%;
+        font-size: 25px;
+        font-weight: 900;
+        padding: 5px;
+        color: rgb(63, 99, 242);
+
+    }
+
+}
+
+
+@media(max-width:860px) {
+    .home .datails {
+        width: 98%;
+        background-color: white;
+        box-shadow: rgba(72, 120, 223, 0.08) 0px 10px 35px 50px;
+        height: 560px;
+        padding: 20px;
+        border-radius: 24px;
+        margin-top: 50px;
+    }
+
+    .homewen .hometext h1 {
+        font-size: 50px;
+        padding: 0 10px;
+
+    }
+
+    .home .datails .radio {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+
+}
+
+@media(max-width:550px) {
+    .home .datails {
+        width: 96%;
+        background-color: white;
+        box-shadow: rgba(72, 120, 223, 0.08) 0px 10px 35px 50px;
+        height: 780px;
+        padding: 20px;
+        border-radius: 24px;
+        margin-top: 50px;
+    }
+
+    .home .datails .toimput {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 0px;
+
+
+    }
+
+    .home .datails .radio {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .home .datails .toimput input {
+        width: 100%
+    }
+
+
+    .home .datails .toimput {
+        margin: 0;
+        padding-right: 20px;
+        width: 100%;
+
+
+    }
+
+    .home .datails .hiatotle {
+        width: 100%;
+        height: 140px;
+        margin-top: 30px;
+        padding: 10px;
+        background-color: rgb(63, 99, 242);
+        color: white;
+        border-radius: 15px 80px 80px 15px;
+    }
+
+    .home .datails .hiatotle h3 {
+        margin: 10px;
+        font-size: 26px;
+    }
+
+    .home .datails .hiatotle p {
+        font-size: 14px;
+
+    }
+
+
+    .home .datails .toimput .inputend p {
+        right: 3%;
+    }
+
+}
+
+@media(max-width:400px) {
+    .home .datails .radio {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .home .datails {
+        width: 96%;
+        background-color: white;
+        box-shadow: rgba(72, 120, 223, 0.08) 0px 10px 35px 50px;
+        height: 820px;
+        padding: 20px;
+        border-radius: 24px;
+        margin-top: 50px;
+    }
+
+    .home .datails .radio select {
+        width: 115px;
+        height: 30px;
+        padding: 2px 10px;
+        border-radius: 8px;
+        margin-left: 5px;
+        font-size: 16px;
+        border: 1px solid rgb(30, 74, 117);
+        margin-top: 5px;
+        cursor: pointer;
+    }
+    .home .datails .hiatotle {
+    width: 100%;
+    height: 150px;
+    margin-top: 30px;
+    padding: 10px ;
+    background-color: rgb(63, 99, 242);
+    color: white;
+    border-radius: 15px 80px 80px 15px;
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+.hiatotle button {
+    padding: 5px 10px;
+    background-image: linear-gradient(to right, #a200ff, #00e1ff);
+    border-radius: 20px;
+    width: 80px;
+    height: 40px;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    cursor: pointer;
+    margin-right: 15px;
+    margin-top: 50px;
+}
+
+
+.home .datails .hiatotle h3 {
+    margin-bottom: 0px;
+    font-size: 30px;
+}
+
+
+
+}
+
+.about {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.about #mathdown {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10px;
+    gap: 10px;
+    opacity: 1;
+}
+.about .math canvas{
+ width:400px;
+  height:400px;
+}
+
+.about .math .groppr {
+    width: 400px;
+    background-color: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+    height: 450px;
+    padding: 20px;
+    border-radius: 24px;
+}
+.about .math .groppr h3 {
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    word-spacing: 5px;
+
+}
+
+ .about .math .groppr p {
+    font-size: 18px; 
+    margin: 12px 0;
+    padding: 15px 20px;
+    background-color: #f8faff; 
+    border-right: 5px solid #4878df; 
+    border-radius: 12px;
+    font-weight: 600;
+    color: #333;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    flex-wrap:wrap ;
+}
+
+.about .math .groppr i,#icon{
+    color: #2a9ce7;
+}
+p.play{
+   display: inline;
+}
+
+
+.about .texttahfe {
+    width: 60%;
+    /* background-color: rgb(187, 85, 85); */
+    padding: 50px;
+    border-radius: 24px;
+    margin: auto;
+    margin-top: 20px;
+}
+.about .texttahfe h3{
+    font-size: 25px;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    line-height: 35px;
+    color: rgba(17, 34, 51, 0.712);
+}
+.about .texttahfe button{
+    width: 180px;
+    height: 45px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 8px;
+}
+.about .texttahfe button:hover{
+    letter-spacing: 1px;
+}
+.about .texttahfe #loop{
+background-color: #2a9ce7;
+color: #ffffff;
+border: none;
+}
+.about .texttahfe #download{
+    border: 1px solid #2a9ce7;
+    color: #2a9ce7;
+    background-color: #ffffff;
+}
+@media(max-width:1000px){
+   
+.about .texttahfe {
+    width: 80%;
+    padding: 40px;
+    border-radius: 24px;
+    margin: auto;
+    margin-top: 20px;
+} 
+.about .math canvas{
+ width:350px;
+  height:400px;
+
+}
+}
+@media(max-width:850px){
+    .about .math {
+    display: flex;
+    justify-content: center;
+    padding: 0 10px;
+    gap: 25px;
+    flex-direction: column;
+    align-items: center;
+}
+.about .math canvas{
+ width:400px;
+  height:430px;
+
+}
+}
+@media(max-width:750px){
+    .about .texttahfe {
+    width: 100%;
+    padding: 10px;
+    padding-top: 20px;
+    border-radius: 24px;
+    margin: auto;
+    margin-top: 20px;
+} 
+}
+@media(max-width:430px){
+.about .math canvas{
+ width:350px;
+  height:350px;
+
+}
+.about .math .groppr {
+    width: 350px;
+    background-color: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+    height: 450px;
+    padding: 20px;
+    border-radius: 24px;
+}
+  .about .texttahfe {
+    width: 100%;
+    padding: 0px;
+    padding-top: 25px;
+    border-radius: 24px;
+    margin: auto;
+    margin-top: 20px;
+} 
+
+}
+@media(max-width:370px){
+    .about .math canvas{
+ width:300px;
+  height:320px;
+
+}
+.about .math .groppr {
+    width: 310px;
+    background-color: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+    height: 450px;
+    padding: 20px;
+    border-radius: 24px;
+}
+
+}
