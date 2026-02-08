@@ -367,6 +367,9 @@
 }
 
 @media(max-width:550px) {
+     .home {
+        padding-left: 0;
+     }
     .home .datails {
         width: 96%;
         background-color: white;
@@ -375,6 +378,7 @@
         padding: 20px;
         border-radius: 24px;
         margin-top: 50px;
+     
     }
 
     .home .datails .toimput {
