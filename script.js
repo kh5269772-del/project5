@@ -102,26 +102,28 @@ function totelfemale() {
       data: {
           labels: ['.fats «g»', '.protein «g»', '.carb «g»'],
           datasets: [{
-            data: [thedata.fate, thedata.proten, thedata.carp], // هنا البيانات الجديدة
+            data: [thedata.fate, thedata.proten, thedata.carp],
             backgroundColor: ['rgb(255, 99, 132)', 'rgb(54, 162, 235)', 'rgb(255, 205, 86)'],
           }]
       },
       options: {
         responsive: false,
         plugins: {
-          legend: { position: 'top' } // لنقل النصوص للأعلى
+          legend: { position: 'top' } 
         }
       }
     };
 
     const ctx = document.getElementById('myChart');
 
-    // 2. هذا هو السطر السحري الذي سيحل مشكلتك:
+ 
     if (myChart) {
-        myChart.destroy(); // حذف البيانات القديمة من الشاشة والذاكرة
+        myChart.destroy(); 
+        
+        //حذف البيانات 
     }
 
-    // 3. الآن قم بإنشاء الرسم الجديد وحفظه في المتغير
+
     myChart = new Chart(ctx, config);
 
   } else {
